@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- LINKS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <section class="registration">
+        <div class="container">
+            <h1 class="titulo">Cadastro de Clientes</h1>
+            <fieldset>
+                <legend>Dados de contato</legend>
+                <form action="paginas/cadastro.html" method="post">
+                   <div class="row">
+                        <label for="nome">Nome
+                            <input type="text" name="name" id="name" required>
+                        </label>
+                        <label for="sobrenome">Sobrenome
+                            <input type="text" name="sobrenome" id="sobrenome" required>
+                        </label>
+                   </div>
+                   <div class="row">                       
+                    <label for="nascimento">Data de Nascimento
+                        <input type="date" name="nascimento" id="nascimento" required>
+                    </label>
+                    <label for="rg">RG
+                        <input type="text" name="rg" id="rg" required>
+                    </label>
+                    <label for="sexo">Sexo
+                        <select name="sexo" id="sexo" required>
+                            <option value="">Selecione</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                    </label>
+                    </div>
+                    <div class="row">                       
+                        <label for="cep">CEP
+                            <input type="text" id="cep" required>
+                        </label>
+                        <label for="logradouro">Endereço
+                        <input type="text" id="logradouro" required>
+                        </label>
+                        <label for="numero">N°
+                            <input type="text" id="numero" required>
+                        </label>
+                    </div>
+                    <div class="row">                       
+                        <label for="bairro">Bairro
+                            <input type="text" id="bairro" required>
+                        </label>
+                        <label for="complemento">Complemento
+                        <input type="text" id="complemento">
+                        </label>
+                        <label for="localidade">Cidade
+                            <input type="text" id="localidade" required>
+                        </label>
+                    </div>
+                    <div class="row">                       
+                        <label for="uf">Estado
+                            <select id="uf">
+                                <option value="">Selecione</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                            </select>
+                        </label>
+                        <label for="telfixo">DDD+Telefone
+                        <input type="tel" id="telfixo">
+                        </label>
+                        <label for="celular">DDD+Celular
+                            <input type="tel" id="celular" required>
+                        </label>
+                    </div>
+                    <div class="row"> 
+                        <button type="submit">Enviar Cadastro</button>
+                    </div>
+                </form>
+            </fieldset>
+        </div>        
+    </section>
+<script type="text/javascript" src="assets/js/script.js"></script>    
+</body>
+</html>
